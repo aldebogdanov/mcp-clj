@@ -1,0 +1,12 @@
+{:paths ["src"]
+ :deps {poly/json-rpc {:local/root "../json-rpc"}
+        poly/sse {:local/root "../sse"}
+        poly/http {:local/root "../http"}
+        poly/http-server {:local/root "../http-server"}
+        poly/json {:local/root "../json"}
+        poly/log {:local/root "../log"}}
+ :aliases
+ {:dev {:extra-paths ["test"]
+        :extra-deps {hato/hato {:mvn/version "1.0.0"}}}
+  :test {:extra-paths ["test"]
+         :extra-deps {hato/hato {:mvn/version "1.0.0"}}}}}
